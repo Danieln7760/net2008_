@@ -31,6 +31,10 @@ for i in range(len(d[key])):
         else:
         print(d[key][i], end="")
 f.close()
+@app.route('/iproutes')
+def iproutes():
+return 'ip routes'
+
 if __name__  ==  '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
 
